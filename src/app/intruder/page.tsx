@@ -1,5 +1,7 @@
 import { Metadata, NextPage } from 'next';
 import React from 'react';
+import teste from "../../../public/monocle.gif"
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'teste teste',
@@ -9,6 +11,7 @@ export const metadata: Metadata = {
 const Intruder: NextPage = () => {
   return (
     <>
+		  <Link rel="icon" type="image/x-icon" href="../../../public/monocle.gif" />
       <div>Intruder</div>
 			<div>Intruder2</div>
     </>
