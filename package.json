@@ -6,14 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+		"prettier-fix": "prettier ./ -w"
   },
   "dependencies": {
     "next": "13.5.4",
     "prettier": "^3.0.3",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.69.3"
+    "react-player": "^2.13.0",
+    "sass": "^1.69.3",
+    "swiper": "^10.3.1"
   },
   "devDependencies": {
     "@types/node": "^20",

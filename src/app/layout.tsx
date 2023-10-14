@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Quem é você?',
+  title: 'Para ela...',
   description: 'Um site feito exclusivamente para meu grande amor!',
 };
 
