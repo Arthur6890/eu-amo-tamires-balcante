@@ -11,7 +11,7 @@ const waterBrush = Water_Brush({ subsets: ['latin'], weight: '400' });
 const oswald = Oswald({ subsets: ['latin'], weight: '400' });
 
 const LoadingPage: NextPage = () => {
-  const [count, setCount] = useState(10);
+  const [count, setCount] = useState(7);
   const router = useRouter();
   useEffect(() => {
     const countdownInterval = setInterval(() => {
@@ -30,11 +30,10 @@ const LoadingPage: NextPage = () => {
       <div className={styles.loading}>
         <LoadingSpinner />
       </div>
+      <h3 className={oswald.className}>Não saia daqui!</h3>
       <h3 className={oswald.className}>
-        Estamos terminando de montar a página para você.
-      </h3>
-      <h3 className={oswald.className}>
-        Em breve você será redirecionada para o conteúdo!
+        Em breve você será redirecionada para o conteúdo, estamos apenas
+        carregando.
       </h3>
     </main>
   );
