@@ -20,7 +20,7 @@ export default function Home() {
       setIsInputEmpty(true);
     } else {
       inputValue.toLowerCase() === 'tamires balçante mendes de aguiar silveira'
-        ? router.push('/real-one')
+        ? router.push('/loading')
         : router.push('/intruder');
     }
   };
