@@ -1,7 +1,0 @@
-package.json
-.circleci/*
-helm/*
-json/*
-.next/*
-node_modules/*
-.history/*
