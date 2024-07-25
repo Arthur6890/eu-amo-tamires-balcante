@@ -1,4 +1,5 @@
 import React from 'react';
+import { GalleryItems } from 'utils/gallery';
 import LightGallery from 'lightgallery/react';
 
 // import styles
@@ -20,26 +21,25 @@ function Gallery() {
 
 	return (
 		<div className={styles.wrapper}>
+			<h2>
+				Quando se trata de fotos, você é a melhor que eu conheço!
+			</h2>
+			<h2>
+				Como eu sempre digo, ser blogueirinha ta no seu sangue, então selecionei algumas e fiz esse pequeno albúm nosso, espero que você goste 😊😊
+			</h2>
 			<LightGallery
 				onInit={onInit}
 				speed={500}
 				plugins={[lgThumbnail, lgZoom]}
 
 			>
-				<a href="https://www.portalntc.org.br/wp-content/uploads/Scania-vende-1.000-caminhoes.jpeg" className={styles.polaroid}>
-					<img alt="img1" src="https://www.portalntc.org.br/wp-content/uploads/Scania-vende-1.000-caminhoes.jpeg" className={styles.polaroidImage} />
+				{GalleryItems.map((item, index) => (
+					<a href={item.imageSrc} className={styles.polaroid}>
+						<img alt={item.caption} src={item.imageSrc} className={styles.polaroidImage} />
 
-					<div className={styles.caption}><p>I Miss London</p></div>
-				</a>
-
-				<a href="https://quatrorodas.abril.com.br/wp-content/uploads/2021/02/FLP3993.jpg?quality=70&strip=info" className={styles.polaroid}>
-					<img alt="img1" src="https://quatrorodas.abril.com.br/wp-content/uploads/2021/02/FLP3993.jpg?quality=70&strip=info" className={styles.polaroidImage} />
-					<div className={styles.caption}><p>I Miss London</p></div>
-				</a>
-				<a href="https://quatrorodas.abril.com.br/wp-content/uploads/2021/02/FLP3993.jpg?quality=70&strip=info" className={styles.polaroid}>
-					<img alt="img1" src="https://quatrorodas.abril.com.br/wp-content/uploads/2021/02/FLP3993.jpg?quality=70&strip=info" className={styles.polaroidImage} />
-					<div className={styles.caption}><p>I Miss London</p></div>
-				</a>
+						<div className={styles.caption}><p>{item.caption}</p></div>
+					</a>
+				))}
 			</LightGallery>
 		</div>
 	);

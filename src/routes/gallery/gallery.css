@@ -1,5 +1,13 @@
 .lg-react-element {
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
 	width: 100%;
+	gap: 40px;
+}
+
+@media screen and (max-width: 1023px) {
+	.lg-react-element {
+		grid-template-columns: 1fr;
+		justify-items: center;
+	}
 }

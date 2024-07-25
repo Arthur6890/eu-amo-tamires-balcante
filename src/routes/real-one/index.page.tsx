@@ -127,12 +127,23 @@ export const RealOnePage = () => {
 			</div>
 
 			<h3 className={styles.final}>
-				Em breve, ao clicar&nbsp;
-				<Link to={"/photos"} >aqui</Link>
+				Finalmente chegou o dia em que ao clicar&nbsp;
+				<Link to={"/gallery"} >aqui</Link>
 				&nbsp;você verá uma coletanea de nossas fotos juntos.
 				<br />
-				mas por enquanto, fique com aquela figurinha do cachorro que é 100% você
-				quando está feliz
+				Demorou muito, mas finalmente está pronto, espero que isso possa tornar nosso 1 ano juntos ainda mais especial
+			</h3>
+			<br /><br />
+			<h3 className={styles.final}>
+				Como bônus, você pode também clicar&nbsp;
+				<Link to={"/photos"} >aqui</Link>
+				&nbsp;e ver uma pequena dedicação que fiz pra você! Nesse momento abri meu coração profundamente, em complemento a tudo que eu disse na cartinha
+				<br />
+				Demorou muito, mas finalmente está pronto, espero que isso possa tornar nosso 1 ano juntos ainda mais especial
+			</h3>
+			<br /><br />
+			<h3 className={styles.final}>
+				Espero que nos próximos 365 dias, você possa ser como esse cachorrinho sempre meu amor!
 			</h3>
 
 			<img src={Doggo} alt="cachorro feliz" className={styles.doggo} />

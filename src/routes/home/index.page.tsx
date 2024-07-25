@@ -19,6 +19,7 @@ export function HomePage() {
 	const handleSubmit = (event: FormEvent) => {
 		if (!inputValue) {
 			setIsInputEmpty(true);
+			console.log("vazio")
 		} else {
 			inputValue.toLowerCase() === 'tamires balçante mendes de aguiar silveira'
 				? navigate('/loading')
@@ -32,35 +33,31 @@ export function HomePage() {
 				<h2 className={`${styles.title}`}>
 					Qual o seu nome completo amigo?
 				</h2>
-				<form onSubmit={handleSubmit} className={styles.form}>
-
-					<input
-						className={styles.inputName}
-						onChange={(event) => setInputValue(event.target.value)}
-						onKeyDown={handleKeyPress}
-
+				<input
+					className={styles.inputName}
+					onChange={(event) => setInputValue(event.target.value)}
+					onKeyDown={handleKeyPress}
+				/>
+				{isInputEmpty && (
+					<>
+						<h2 className={`${styles.burro}`}>
+							sem digitar o nome fica dificil
+						</h2>
+						<h2 className={`${styles.burro}`}>
+							BASTA LER A PRIMEIRA LINHA NÉ AMIGÃO
+						</h2>
+					</>
+				)}
+				<div className={styles.emojiWrapper}>
+					<img
+						src={isInputEmpty ? burro : emoji}
+						alt={isInputEmpty ? "Picapau e burro" : "monocle emoji"}
+						className={isInputEmpty ? styles.burroImage : styles.emojiImage}
 					/>
-					{isInputEmpty && (
-						<>
-							<h2 className={`${styles.burro}`}>
-								sem digitar o nome fica dificil
-							</h2>
-							<h2 className={`${styles.burro}`}>
-								BASTA LER A PRIMEIRA LINHA NÉ AMIGÃO
-							</h2>
-						</>
-					)}
-					<div className={styles.emojiWrapper}>
-						<img
-							src={isInputEmpty ? burro : emoji}
-							alt={isInputEmpty ? "Picapau e burro" : "monocle emoji"
-							} className={isInputEmpty ? styles.burroImage : styles.emojiImage}
-						/>
-					</div>
-					<button type='submit' className={styles.submitButton}>
-						acessar conteúdo
-					</button>
-				</form>
+				</div>
+				<button onClick={handleSubmit} className={styles.submitButton}>
+					acessar conteúdo
+				</button>
 			</div>
 		</main>
 	);
