@@ -136,7 +136,7 @@ export const RealOnePage = () => {
 			<br /><br />
 			<h3 className={styles.final}>
 				Como bônus, você pode também clicar&nbsp;
-				<Link to={"/photos"} >aqui</Link>
+				<Link to={"/video"} >aqui</Link>
 				&nbsp;e ver uma pequena dedicação que fiz pra você! Nesse momento abri meu coração profundamente, em complemento a tudo que eu disse na cartinha
 				<br />
 				Demorou muito, mas finalmente está pronto, espero que isso possa tornar nosso 1 ano juntos ainda mais especial
