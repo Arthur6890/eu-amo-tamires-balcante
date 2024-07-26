@@ -1,0 +1,49 @@
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 2rem;
+	min-height: 100vh;
+	background: #ff00c4;
+
+	@media screen and (max-width: 1023px) {
+		padding: 2rem 0;
+	}
+
+	h2 {
+		color: #ffffff;
+		text-align: center;
+	}
+}
+
+.polaroid {
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border: 10px solid #ffffff;
+	background-color: #ffffff;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-decoration: none;
+
+	@media screen and (max-width: 1023px) {
+		width: 300px;
+	}
+
+	.polaroidImage {
+		width: 400px;
+		height: 480px;
+
+		@media screen and (max-width: 1023px) {
+			width: 300px;
+			height: 380px;
+		}
+	}
+}
+
+.caption {
+	color: #3d3d3d;
+
+	text-align: center;
+	padding: 10px 20px;
+}
