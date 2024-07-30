@@ -11,3 +11,18 @@
 		justify-items: center;
 	}
 }
+
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.lg-react-element {
+		grid-template-columns: 1fr 1fr;
+		justify-items: center;
+	}
+}
+
+@media screen and (min-width: 1440px) and (max-width: 2559px) {
+	.lg-react-element {
+		grid-template-columns: 1fr 1fr 1fr;
+		justify-items: center;
+	}
+}

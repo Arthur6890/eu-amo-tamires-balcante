@@ -131,7 +131,6 @@ export const RealOnePage = () => {
 				<Link to={"/gallery"} >aqui</Link>
 				&nbsp;você verá uma coletanea de nossas fotos juntos.
 				<br />
-				Demorou muito, mas finalmente está pronto, espero que isso possa tornar nosso 1 ano juntos ainda mais especial
 			</h3>
 			<br /><br />
 			<h3 className={styles.final}>

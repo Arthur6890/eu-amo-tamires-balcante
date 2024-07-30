@@ -53,3 +53,19 @@
 		margin: 25px 0;
 	}
 }
+
+.videoYoutube {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 80%;
+	background-color: aqua;
+
+	@media screen and (max-width: 1023px) {
+		width: 80%;
+	}
+
+	iframe {
+		width: 100%;
+	}
+}

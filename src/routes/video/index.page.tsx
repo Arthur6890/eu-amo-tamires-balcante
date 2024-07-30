@@ -34,8 +34,8 @@ export const VideoPage = () => {
 			<p>Se fosse pra resumir em uma fala tudo que eu quis dizer seria: Eu quero te fazer tão feliz quanto você me faz, e irei demonstrar isso com atitudes. Você é especial e vale todo esforço do mundo! Tenho muita sorte em ter você do meu lado</p>
 			<br />
 			<br />
-			<div className={styles.video}>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/ko3cEXyVt_Y?si=9hUCIs8h8LjjknO2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
+			<div className={styles.videoYoutube}>
+				<iframe height="615" src="https://www.youtube.com/embed/ko3cEXyVt_Y?si=9hUCIs8h8LjjknO2" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 			</div>
 		</div>
 	)
